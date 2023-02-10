@@ -41,19 +41,30 @@
     border: 1px solid white;
 }
 .logoContainer{
-    display: inline-block;
+    margin:auto;
+    position:absolute;
     width: 30vw;
+    left: 10px;
+    top: 333px;
 }
 .logo{
-    position:static;
     width: 100%;
 }
+
 .fechasContainer{
-    display: inline-block;
-    max-width: 15vw;
+    max-width: 30vw;
+    position:absolute;
+    left: 354px;
+    top: 375px;
 }
 
 .imagenContainer{
-    display: inline-block;
+    margin: auto;
+    position: absolute;
     width: 30vw;
+    left: 694px;
+    top: 342px;
+}
+.imagen{
+    width: 100%;
 }

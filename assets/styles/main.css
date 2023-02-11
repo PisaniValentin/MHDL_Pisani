@@ -2,10 +2,14 @@
 
 
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(15, 15, 15);
+}
+.nav{
+    display: inline-block;
 }
 
 
@@ -18,16 +22,98 @@
     height: 100%;
     width: 100%;
 }
+/**
+
+**/
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+.bottonEfecto{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    transform: translate(0, 0);
+    background-color: transparent;
+    
+}
+
+a{
+    display: inline-block;
+    width: 83px;
+    height: 35px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid rgb(242, 209, 46);
+    color: rgb(242, 209, 46);
+    font: 12px 'Montserrat', Futura, sans-serif;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    /* text-transform: uppercase; */
+    transition: all .35s;
+}
+
+a:before,
+a:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: rgb(242, 209, 46);
+  z-index: -1;
+  transition: all .35s;
+}
+
+a:before{
+  opacity: .5;
+}
+
+a:after{
+  transition-delay: .2s;
+}
+
+a:hover{
+  color: #161616;
+}
+
+a:hover:before,
+a:hover:after{
+  top: 0;
+}
+
+
+
+
+
+/**
+
+**/
 
 .botones{
+
     font: 14px 'Montserrat', Futura, sans-serif;
+    border: 1px solid rgb(191, 68, 47);;
+}
+
+.botonera{
     position: absolute;
-    top: 29px;
-    right: 99px;
+    top: 24px;
+    right: 106px;
+    display: inline;
 }
 
 .botones a{
     color:rgb(242, 209, 46);
+    
 }
 
 h1{
@@ -44,11 +130,12 @@ h1{
 .indexSection h2{
     color:rgb(242, 209, 46);
     font: 20px 'Montserrat', Futura, sans-serif;
-    font-style: bold;
+    
+    font-weight: bold;
     height: 5vh;
     min-width: 100vw;
     text-align: center;
-    border: 1px solid rgb(242, 209, 46);;
+    border: 1px solid rgb(242, 209, 46);
 }
 .logoContainer{
     margin:auto;

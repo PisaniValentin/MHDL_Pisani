@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 
-*{
-    
+*{   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(15, 15, 15);
 }
+
 .nav{
     display: inline-block;
 }
-
 
 .bannerContainer{
     width: 100%;
@@ -23,7 +22,7 @@
     width: 100%;
 }
 /**
-
+    Animaciones de los botones de navegacion
 **/
 
 *,
@@ -32,7 +31,7 @@
   box-sizing: border-box;
 }
 
-.bottonEfecto{
+.botonera{
     position: absolute;
     top: 30px;
     right: 100px;
@@ -41,7 +40,7 @@
     
 }
 
-a{
+.buttonNav{
     display: inline-block;
     width: 83px;
     height: 35px;
@@ -49,53 +48,76 @@ a{
     text-decoration: none;
     text-align: center;
     border-radius: 50px;
-    border: 3px solid rgb(242, 209, 46);
-    color: rgb(242, 209, 46);
+    border: 3px solid rgb(248 225 46);
+    color: rgb(0, 0, 0);
     font: 12px 'Montserrat', Futura, sans-serif;
     font-weight: bold;
     position: relative;
     overflow: hidden;
-    background: transparent;
-    /* text-transform: uppercase; */
+    background: #f8e12ead;
     transition: all .35s;
 }
 
-a:before,
-a:after{
+.buttonNav:before,
+.buttonNav:after{
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   top: -100%;
   left: 0;
-  background: rgb(242, 209, 46);
+  background: rgb(245 219 46);
   z-index: -1;
   transition: all .35s;
 }
 
-a:before{
+.buttonNav:before{
   opacity: .5;
 }
 
-a:after{
+.buttonNav:after{
   transition-delay: .2s;
 }
 
-a:hover{
+.buttonNav:hover{
   color: #161616;
 }
 
-a:hover:before,
-a:hover:after{
+.buttonNav:hover:before,
+.buttonNav:hover:after{
   top: 0;
 }
 
+/**
+    Boton de navegacion de la pagina actual
+**/
 
-
+.buttonNav[href="#"]{
+    text-decoration:underline;
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+    
+}
+.buttonNav[href="#"]:hover{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
+.buttonNav[href="#"]::before{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
+.buttonNav[href="#"]::after{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
 
 
 /**
-
+    Fin Botones navegacion
 **/
 
 .botones{
@@ -104,20 +126,8 @@ a:hover:after{
     border: 1px solid rgb(191, 68, 47);;
 }
 
-.botonera{
-    position: absolute;
-    top: 24px;
-    right: 106px;
-    display: inline;
-}
-
-.botones a{
-    color:rgb(242, 209, 46);
-    
-}
-
 h1{
-    color:rgb(242, 209, 46);
+    color:rgb(95 161 153);
     margin-left: 15px;
     font: 30px 'Montserrat', Futura, sans-serif;
 }
@@ -127,15 +137,14 @@ h1{
     height: 50vh;
 }
 
-.indexSection h2{
-    color:rgb(242, 209, 46);
+h2{
+    color:rgb(95 161 153);
     font: 20px 'Montserrat', Futura, sans-serif;
-    
     font-weight: bold;
     height: 5vh;
     min-width: 100vw;
     text-align: center;
-    border: 1px solid rgb(242, 209, 46);
+    border: 1px solid rgb(95 161 153);
 }
 .logoContainer{
     margin:auto;
@@ -147,20 +156,42 @@ h1{
 }
 
 .fechasContainer{
+    margin-top: 20px;
+    vertical-align: top;
     color: rgb(211, 211, 211);
     font: 14px 'Montserrat', Futura, sans-serif;
-    margin:auto;
     max-width: 30vw;
     display: inline-block;
     margin-left: 85px;
 }
 
 .imagenContainer{
-    margin: auto;
+    vertical-align: top;
+    margin-top: 20px;
     margin-left: 60px;
     width: 20vw;
     display: inline-block;
 }
-.imagen{
+.imagenIndex{
     width: 100%;
+}
+
+.sectionContact{
+    display: inline-block;
+    height: 50vh;
+    font: 14px 'Montserrat', Futura, sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+.contactInfo{
+    margin-top: 85px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contactImage{
+    width: 25vw;
+    margin-left: 30px;
+    margin-top: 30px;
+    vertical-align: top;
 }

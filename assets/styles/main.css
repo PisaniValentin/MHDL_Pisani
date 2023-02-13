@@ -207,5 +207,7 @@ h2{
     display: inline-block;
     vertical-align: top;
     width: 60vw;
-
+}
+.email{
+    color: rgb(246 222 46);
 }

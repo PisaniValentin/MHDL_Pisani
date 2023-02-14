@@ -21,10 +21,8 @@
     height: 100%;
     width: 100%;
 }
-/**
-    Animaciones de los botones de navegacion
-**/
 
+/************ Animaciones de los botones de navegacion ************/
 *,
 *:before,
 *:after{
@@ -32,7 +30,8 @@
 }
 
 .botonera{
-    position: absolute;
+    display: flex;
+    position:absolute;
     top: 30px;
     right: 100px;
     transform: translate(0, 0);
@@ -41,7 +40,9 @@
 }
 
 .buttonNav{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 83px;
     height: 35px;
     line-height: 30px;
@@ -88,11 +89,12 @@
   top: 0;
 }
 
-/**
-    Boton de navegacion de la pagina actual
-**/
+/************ Actual page nav button Start ************/
 
 .buttonNav[href="#"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration:underline;
     background-color: rgb(246 222 46);
     color: black;
@@ -116,9 +118,8 @@
 }
 
 
-/**
-    Fin Botones navegacion
-**/
+/************ Actual page nav button End ************/
+
 
 .botones{
 
@@ -132,9 +133,14 @@ h1{
     font: 30px 'Montserrat', Futura, sans-serif;
 }
 
+/************ Home Page Start ************/
 .indexSection{
-    display: inline-block;
+    display: flex;
     height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 h2{
@@ -146,36 +152,42 @@ h2{
     text-align: center;
     border: 1px solid rgb(95 161 153);
 }
+
 .logoContainer{
-    margin:auto;
     width: 20vw;
-    display: inline-block;
 }
+
 .logo{
     width: 100%;
 }
 
 .fechasContainer{
-    margin-top: 20px;
-    vertical-align: top;
     color: rgb(211, 211, 211);
     font: 14px 'Montserrat', Futura, sans-serif;
+    width: 20vw;
+    /* margin-top: 20px;
+    vertical-align: top;
+    
     max-width: 30vw;
     display: inline-block;
-    margin-left: 85px;
+    margin-left: 85px; */
 }
 
 .imagenContainer{
-    vertical-align: top;
+    width: 20vw;
+    /* vertical-align: top;
     margin-top: 20px;
     margin-left: 60px;
-    width: 20vw;
-    display: inline-block;
+    
+    display: inline-block; */
 }
 .imagenIndex{
     width: 100%;
 }
+/************ Home Page End  ************/
 
+
+/************ Contact Page Start ************/
 .contactSection{
     display: inline-block;
     height: 50vh;
@@ -195,19 +207,47 @@ h2{
     margin-top: 30px;
     vertical-align: top;
 }
+
+.email{
+    color: rgb(246 222 46);
+}
+
+/************ Contact Page End ************/
+
+/************ About Page Start ************/
+
 .aboutSection{
-    display: inline-block;
-    height: 50vh;
+    display: flex;
     font: 14px 'Montserrat', Futura, sans-serif;
     color: rgb(211, 211, 211);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* display: inline-block;
+    height: 50vh;
+    font: 14px 'Montserrat', Futura, sans-serif;
+    color: rgb(211, 211, 211); */
 }
 .aboutInfo{
+    width: 43vw;
     margin-top: 10px;
+}
+
+.aboutImage{
+    width: 20vw;
+}
+.aboutText{
+    width: 43vw;
+}
+.aboutText p{
+    font-size: 1.2vw;
+}
+    
+    /* margin-top: 10px;
     margin-left: 30px;
     display: inline-block;
     vertical-align: top;
     width: 60vw;
-}
-.email{
-    color: rgb(246 222 46);
-}
+
+/************ About Page End ************/

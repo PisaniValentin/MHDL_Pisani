@@ -189,10 +189,13 @@ h2{
 
 /************ Contact Page Start ************/
 .contactSection{
-    display: inline-block;
+    display: flex;
     height: 50vh;
     font: 14px 'Montserrat', Futura, sans-serif;
     color: rgb(211, 211, 211);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .contactInfo{
@@ -251,3 +254,9 @@ h2{
     width: 60vw;
 
 /************ About Page End ************/
+
+.tabla,th,td{
+    border-collapse: collapse;
+    border:2px solid white;
+    color: white;
+}

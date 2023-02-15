@@ -259,4 +259,26 @@ h2{
     border-collapse: collapse;
     border:2px solid white;
     color: white;
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+.gameInfoSubtitle{
+    display: flex;
+    color:rgb(95 161 153);
+    margin-left: 15px;
+    font: 20px 'Montserrat', Futura, sans-serif;
+    height: 5vh;
+    border: none;
+    font-style: oblique;
+}
+.gameInfoThirTitle{
+    font: 20px 'Montserrat', Futura, sans-serif;
+    font-style: oblique;
+    color:rgb(95 161 153);
+    text-decoration:underline;
+    margin-left: 15px;
+}
+
+footer{
+    font: 15px 'Montserrat', Futura, sans-serif;
+    color: aliceblue;
 }

@@ -279,6 +279,31 @@ h2{
 }
 
 footer{
+    margin-top: 30px;
+    margin-left: 15px;
     font: 15px 'Montserrat', Futura, sans-serif;
     color: aliceblue;
+}
+
+.gameInfoMain{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.gameInfoArticles{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+footer b{
+    color:rgb(246 222 46);
+}
+.gameInfoContact{
+    display: flex;
+    margin-right: 15px;
+    justify-content: space-between;
+}
+th{
+    color: rgb(246 222 46);
 }

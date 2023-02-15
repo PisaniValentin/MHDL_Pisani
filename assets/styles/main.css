@@ -165,21 +165,10 @@ h2{
     color: rgb(211, 211, 211);
     font: 14px 'Montserrat', Futura, sans-serif;
     width: 20vw;
-    /* margin-top: 20px;
-    vertical-align: top;
-    
-    max-width: 30vw;
-    display: inline-block;
-    margin-left: 85px; */
 }
 
 .imagenContainer{
     width: 20vw;
-    /* vertical-align: top;
-    margin-top: 20px;
-    margin-left: 60px;
-    
-    display: inline-block; */
 }
 .imagenIndex{
     width: 100%;
@@ -227,10 +216,6 @@ h2{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    /* display: inline-block;
-    height: 50vh;
-    font: 14px 'Montserrat', Futura, sans-serif;
-    color: rgb(211, 211, 211); */
 }
 .aboutInfo{
     width: 43vw;
@@ -247,23 +232,20 @@ h2{
     font-size: 12px;
 }
     
-    /* margin-top: 10px;
-    margin-left: 30px;
-    display: inline-block;
-    vertical-align: top;
-    width: 60vw;
 
 /************ About Page End ************/
 
+/************ Game info page Star ************/
 .tabla,th,td{
     border-collapse: collapse;
-    border:2px solid white;
-    color: white;
+    border:2px solid rgb(211, 211, 211);
+    color: rgb(211, 211, 211);
     font: 15px 'Montserrat', Futura, sans-serif;
 }
 .gameInfoSubtitle{
     display: flex;
     color:rgb(95 161 153);
+    min-width: auto;
     margin-left: 15px;
     font: 20px 'Montserrat', Futura, sans-serif;
     height: 5vh;
@@ -282,7 +264,7 @@ footer{
     margin-top: 30px;
     margin-left: 15px;
     font: 15px 'Montserrat', Futura, sans-serif;
-    color: aliceblue;
+    color: rgb(211, 211, 211);
 }
 
 .gameInfoMain{
@@ -306,4 +288,48 @@ footer b{
 }
 th{
     color: rgb(246 222 46);
+}
+
+
+/************ Game info page End ************/
+
+.rulesHeader{
+    margin-top: 30px;
+}
+
+.rulesHeader h1,h2,h3,p{
+    color:rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+    border: none;
+    text-align: center;
+    
+}
+.rulesHeader h1,h2{
+    font-weight: bold;
+}
+
+.rulesSection{
+    margin-top: 30px;
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+    margin-left: 30px;
+}
+.rulesSection h2 {
+    text-align: start;
+    font-weight: bold;
+}
+.rulesSection p {
+    text-align: start;
+}
+
+
+.listaLetra{
+    list-style-type: lower-alpha;
+}
+ul{
+    list-style-type: circle;
+}
+footer h2{
+    text-align: start;
+    font-weight: bold;
 }

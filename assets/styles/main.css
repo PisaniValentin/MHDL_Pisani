@@ -477,3 +477,7 @@ iframe{
     font-weight: bold;
     color: rgb(246 222 46);
 }
+
+.submitButton{
+    border: 2px solid rgb(248 225 46);
+}

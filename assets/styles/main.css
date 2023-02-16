@@ -148,7 +148,7 @@ h2{
     font: 20px 'Montserrat', Futura, sans-serif;
     font-weight: bold;
     height: 5vh;
-    min-width: 100vw;
+    width: 100vw;
     text-align: center;
     border: 1px solid rgb(95 161 153);
 }
@@ -246,6 +246,7 @@ h2{
     display: flex;
     color:rgb(95 161 153);
     min-width: auto;
+    max-width: 80%;
     margin-left: 15px;
     font: 20px 'Montserrat', Futura, sans-serif;
     height: 5vh;
@@ -263,8 +264,9 @@ h2{
 }
 
 footer{
-    margin-top: 30px;
     margin-left: 15px;
+    margin-top: 30px;
+    margin-right: 15px;
     font: 15px 'Montserrat', Futura, sans-serif;
     color: rgb(211, 211, 211);
 }
@@ -285,7 +287,6 @@ footer b{
 }
 .gameInfoContact{
     display: flex;
-    margin-right: 15px;
     justify-content: space-between;
 }
 th{
@@ -294,7 +295,7 @@ th{
 
 
 /************ Game info page End ************/
-
+/*
 .rulesHeader{
     margin-top: 30px;
 }
@@ -302,16 +303,15 @@ th{
 .rulesHeader h1,h2,h3,p{
     color:rgb(211, 211, 211);
     font: 15px 'Montserrat', Futura, sans-serif;
-    /* border: none; */
     text-align: center;
     
 }
 .rulesHeader h1,h2{
     font-weight: bold;
 }
-
+*/
 .rulesH2{
-    border: none;
+   /* border: none;*/
 }
 
 .rulesSection{
@@ -321,6 +321,7 @@ th{
     margin-left: 30px;
 }
 .rulesSection h2 {
+    width: 100%;
     text-align: start;
     font-weight: bold;
 }

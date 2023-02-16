@@ -433,16 +433,17 @@ legend{
 fieldset{
     border-color: rgb(246 222 46);
 }
-#street{
+#streetID{
     width: 75vw;
 }
-#streetLabel{
+#Street{
     width: 10vw;
 }
 .streetContainer{
     margin-top: 5px;
     width: 90vw;
 }
+
 #lastName{
     margin-left: 30px;
 }

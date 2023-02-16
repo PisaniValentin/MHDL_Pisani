@@ -33,28 +33,30 @@
                     <input type="text" name="Name" id="Name">
                 </div>
                 <div>
-                    <label id="LastName" for="LastName">Last Name</label>
+                    <label id="lastName" for="LastName">Last Name</label>
                     <input type="text" name="Lastname" id="LastName">
                 </div>
             </div>
             <div class="streetContainer">
                 <label id="streetLabel" for="Street">Street Address:</label>
-                <input id="street" type="text" name="Street" id="Street">
+                <input type="text" name="Street" id="Street">
             </div>
             <div>
                 <label for="City">City:</label>
                 <input type="text" name="City" id="City">
-                <label for="Zip Code">Zip Code:</label>
-                <input type="text" name="ZipCode" id="Zip Code">
+                <label for="ZipCode">Zip Code:</label>
+                <input type="text" name="ZipCode" id="ZipCode">
             </div>
             <div>
                 <label for="Birthday">Birth Date(mm/dd/yyyy):</label>
                 <input type="text" name="Birthday" id="Birthday">
-                <label for="gender">Gender:</label>
-                <label for="Female">Female:</label>
-                <input type="radio" name="Gender" id="Female" value="Female">
-                <label for="male">Male:</label>
-                <input type="radio" name="Gender" id="Male" value="Male">
+                <p>Gender:
+
+                    <label for="Female">Female:</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Male">Male:</label>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                </p>
             </div>
             <div class="grade">
                 <label for="fifth">5st</label>
@@ -69,12 +71,12 @@
                 <input type="checkbox" name="grade" id="first" value="1st">
                 <label for="preSchool">Pre School</label>
                 <input type="checkbox" name="grade" id="preSchool" value="Pre School">
-                <label for="grade">Grade:</label>
+                <p>Grade:</p>
             </div>
         </div>
         <fieldset>
+            <legend>Which elementary school do you live near?</legend>
             <div>
-                <legend>Which elementary school do you live near?</legend>
                 <label class="ClosestSchool" for="ClosestSchool">Closest School:</label>
                 <select name="ClosestSchool" id="ClosestSchool">
                     <option value="AJ Katzenmaier">AJ Katzenmaier</option>
@@ -175,7 +177,7 @@
             <div>
                 <label for="Date">Date:</label>
                 <input type="text" name="Date" id="Date">
-                <input class="submitButton" type="submit" name="" id="">
+                <input class="submitButton" type="submit">
             </div>
         </fieldset>
 

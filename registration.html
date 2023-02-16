@@ -19,33 +19,37 @@
             <a class="buttonNav" href="./index.html">Home</a>
             <a class="buttonNav" href="./about.html">About MDHL</a>
             <a class="buttonNav" href="./contact.html">Contact</a>
-            <a class="buttonNav" href="./game_info.html" >GameInfo</a>
-            <a class="buttonNav" href="./rules.html" >Rules</a>
+            <a class="buttonNav" href="./game_info.html">GameInfo</a>
+            <a class="buttonNav" href="./rules.html">Rules</a>
             <a class="buttonNav" href="#">Registration</a>
         </nav>
-    </header> 
+    </header>
     <h1>Registration Form</h1>
     <form action="show_data.html" method="get">
         <div class="formFirstPart">
             <div class="formNames">
-                <label for="Name">Player's First Name:</label>
-                <input type="text" name="name" id="Name">
-                <label id="lastName" for="last Name">Last Name</label>
-                <input type="text" name="lastname" id="Last Name">
+                <div class="">
+                    <label for="Name">Player's First Name:</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <div>
+                    <label id="LastName" for="LastName">Last Name</label>
+                    <input type="text" name="Lastname" id="LastName">
+                </div>
             </div>
             <div class="streetContainer">
                 <label id="streetLabel" for="Street">Street Address:</label>
-                <input id="street" type="text" name="street" id="Street">
+                <input id="street" type="text" name="Street" id="Street">
             </div>
             <div>
                 <label for="City">City:</label>
                 <input type="text" name="City" id="City">
                 <label for="Zip Code">Zip Code:</label>
-                <input type="text" name="Zip Code" id="Zip Code">
+                <input type="text" name="ZipCode" id="Zip Code">
             </div>
             <div>
                 <label for="Birthday">Birth Date(mm/dd/yyyy):</label>
-                <input type="text" name="birthday" id="Birthday">
+                <input type="text" name="Birthday" id="Birthday">
                 <label for="gender">Gender:</label>
                 <label for="Female">Female:</label>
                 <input type="radio" name="Gender" id="Female" value="Female">
@@ -112,21 +116,21 @@
             <div class="uniformContainer">
                 <div class="uniformContainerColumnLeft">
                     <label for="youthS">Youth Small</label>
-                    <input type="checkbox" name="UniformSize" id="youthS" value="Youth Small">
+                    <input type="radio" name="UniformSize" id="youthS" value="Youth Small">
                     <label for="youthM">Youth Medium</label>
-                    <input type="checkbox" name="UniformSize" id="youthM" value="Youth Medium">
+                    <input type="radio" name="UniformSize" id="youthM" value="Youth Medium">
                     <label for="youthL">Youth Large</label>
-                    <input type="checkbox" name="UniformSize" id="youthL" value="Youth Large">
+                    <input type="radio" name="UniformSize" id="youthL" value="Youth Large">
                     <label for="small">Small</label>
-                    <input type="checkbox" name="UniformSize" id="small" value="Small">
+                    <input type="radio" name="UniformSize" id="small" value="Small">
                 </div>
                 <div class="uniformContainerColumnRight">
                     <label for="medium">Medium</label>
-                    <input type="checkbox" name="UniformSize" id="medium" value="Medium">
+                    <input type="radio" name="UniformSize" id="medium" value="Medium">
                     <label for="large">Large</label>
-                    <input type="checkbox" name="UniformSize" id="large" value="Large">
+                    <input type="radio" name="UniformSize" id="large" value="Large">
                     <label for="extraLarge">Extra-Large</label>
-                    <input type="checkbox" name="UniformSize" id="extraLarge" value="Extra-Large">
+                    <input type="radio" name="UniformSize" id="extraLarge" value="Extra-Large">
                 </div>
             </div>
         </fieldset>
@@ -138,16 +142,18 @@
                 programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees
                 and associated personnel and volunteers, including the facilities used for practices and games, against
                 any claim by or on behalf of the registrant as a result of the registrant's participation in the
-                programand/orbeing transported to or from MDHL sponsored activities, which transportation By entering your name below,
-                I agree and authorize the above. In addition, By entering your name below, I also acknowledge that I have
+                programand/orbeing transported to or from MDHL sponsored activities, which transportation By entering
+                your name below,
+                I agree and authorize the above. In addition, By entering your name below, I also acknowledge that I
+                have
                 read the cancellation policy and agree to its terms.</p>
             <div>
-                <label for="parentOrGuardian">Parent/GuardianSignature:</label>
-                <input type="text" name="parentOrGuardian" id="parentOrGuardian">
+                <label for="Parent/Guardian">Parent/GuardianSignature:</label>
+                <input type="text" name="ParentGuardian" id="Parent/Guardian">
             </div>
             <div>
-                <label for="date">Date:</label>
-                <input type="text" name="date" id="date">
+                <label for="Date">Date:</label>
+                <input type="text" name="Date" id="Date">
         </fieldset>
         <input type="submit" name="" id="">
     </form>

@@ -349,6 +349,7 @@ footer h2{
 
 .rulesSubH2{
     margin-top:0;
+    max-width: 95vw;
     border: none;
 }
 /** FORMULARIO **/
@@ -440,7 +441,7 @@ fieldset{
 }
 .streetContainer{
     margin-top: 5px;
-    width: 95vw;
+    width: 90vw;
 }
 #lastName{
     margin-left: 30px;
@@ -448,7 +449,14 @@ fieldset{
 
 .formNames{
     display: flex;
+    justify-content: space-between;
 }
+
+.formNames input{
+   width: 35vw;
+}
+
+
 .grade{
    
     display: flex;

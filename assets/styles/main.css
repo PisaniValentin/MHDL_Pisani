@@ -351,3 +351,84 @@ footer h2{
     margin-top:0;
     border: none;
 }
+/** FORMULARIO **/
+form{
+    margin-left:15px ;
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+input{
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+.formFirstPart{
+    flex-direction: column;
+    display: flex;
+    color: white;
+}
+.closestSchoolContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.closestSchoolContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 153px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.closestSchoolContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 153px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.positionPlayContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.positionPlayContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 113px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.uniformContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.uniformContainerColumnLeft{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 127px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.uniformContainerColumnRight{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+legend{
+    margin-left: 25px ;
+    color: rgb(246 222 46);
+    font-weight: bold;
+}
+fieldset{
+    border-color: rgb(246 222 46);;
+}

@@ -30,13 +30,15 @@
 }
 
 .botonera{
+    width: 249px;
+    height: 69px;
     display: flex;
-    position:absolute;
+    flex-wrap: wrap;
+    position: absolute;
     top: 30px;
-    right: 100px;
+    right: 70px;
     transform: translate(0, 0);
     background-color: transparent;
-    
 }
 
 .buttonNav{
@@ -297,7 +299,7 @@ th{
 /************ Game info page End ************/
 
 .rulesHeader{
-    margin-top: 30px;
+    margin-top: 0px;
     text-align: center;
     color: rgb(211, 211, 211);
     font: 20px 'Montserrat', Futura, sans-serif;
@@ -344,3 +346,8 @@ footer h2{
     align-items: flex-start;
     flex-direction: column;
 }   
+
+.rulesSubH2{
+    margin-top:0;
+    border: none;
+}

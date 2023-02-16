@@ -11,48 +11,61 @@
 </head>
 
 <body>
+    <header>
+        <div class="bannerContainer">
+            <img class="banner" src="./assets/images/design2_image1.jpg" alt="Mighty_ducks_banner">
+        </div>
+        <nav class="botonera">
+            <a class="buttonNav" href="./index.html">Home</a>
+            <a class="buttonNav" href="./about.html">About MDHL</a>
+            <a class="buttonNav" href="./contact.html">Contact</a>
+            <a class="buttonNav" href="./game_info.html" >GameInfo</a>
+            <a class="buttonNav" href="./rules.html" >Rules</a>
+            <a class="buttonNav" href="#">Registration</a>
+        </nav>
+    </header> 
     <h1>Registration Form</h1>
-    <form action="">
+    <form action="show_data.html" method="get">
         <div class="formFirstPart">
-            <div>
-                <label for="name">Player's First Name:</label>
-                <input type="text" name="name" id="name">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastname" id="lastname">
+            <div class="formNames">
+                <label for="Name">Player's First Name:</label>
+                <input type="text" name="name" id="Name">
+                <label id="lastName" for="last Name">Last Name</label>
+                <input type="text" name="lastname" id="Last Name">
+            </div>
+            <div class="streetContainer">
+                <label id="streetLabel" for="Street">Street Address:</label>
+                <input id="street" type="text" name="street" id="Street">
             </div>
             <div>
-                <label for="street">Street Address:</label>
-                <input type="text" name="street" id="street">
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City">
+                <label for="Zip Code">Zip Code:</label>
+                <input type="text" name="Zip Code" id="Zip Code">
             </div>
             <div>
-                <label for="city">City:</label>
-                <input type="text" name="city" id="city">
-                <label for="code">Zip Code:</label>
-                <input type="text" name="code" id="code">
-            </div>
-            <div>
-                <label for="birthday">Birth Date(mm/dd/yyyy):</label>
-                <input type="text" name="birthday" id="birthday">
+                <label for="Birthday">Birth Date(mm/dd/yyyy):</label>
+                <input type="text" name="birthday" id="Birthday">
                 <label for="gender">Gender:</label>
-                <label for="male">Female:</label>
-                <input type="radio" name="gender" id="Female" value="female">
+                <label for="Female">Female:</label>
+                <input type="radio" name="Gender" id="Female" value="Female">
                 <label for="male">Male:</label>
-                <input type="radio" name="gender" id="male" value="male">
+                <input type="radio" name="Gender" id="Male" value="Male">
             </div>
-            <div>
-                <label for="grade">Grade:</label>
-                <label for="preSchool">Pre School</label>
-                <input type="checkbox" name="grade" id="preSchool" value="preSchool">
-                <label for="first">1st</label>
-                <input type="checkbox" name="grade" id="first" value="first">
-                <label for="second">2st</label>
-                <input type="checkbox" name="grade" id="second" value="second">
-                <label for="third">3st</label>
-                <input type="checkbox" name="grade" id="third" value="third">
-                <label for="fourth">4st</label>
-                <input type="checkbox" name="grade" id="fourth" value="fourth">
+            <div class="grade">
                 <label for="fifth">5st</label>
-                <input type="checkbox" name="grade" id="fifth" value="fifth">
+                <input type="checkbox" name="grade" id="fifth" value="5st">
+                <label for="fourth">4st</label>
+                <input type="checkbox" name="grade" id="fourth" value="4st">
+                <label for="third">3st</label>
+                <input type="checkbox" name="grade" id="third" value="3st">
+                <label for="second">2st</label>
+                <input type="checkbox" name="grade" id="second" value="2st">
+                <label for="first">1st</label>
+                <input type="checkbox" name="grade" id="first" value="1st">
+                <label for="preSchool">Pre School</label>
+                <input type="checkbox" name="grade" id="preSchool" value="Pre School">
+                <label for="grade">Grade:</label>
             </div>
         </div>
         <fieldset>
@@ -61,19 +74,19 @@
             <div class="closestSchoolContainer">
                 <div class="closestSchoolContainerColumn">
                     <label for="AJ Katzenmaier">AJ Katzenmaier</label>
-                    <input type="checkbox" name="escuelasCercanas" id="AJ Katzenmaier" value="AJ Katzenmaier">
+                    <input type="checkbox" name="ClosestSchool" id="AJ Katzenmaier" value="AJ Katzenmaier">
                     <label for="Greenbay">Greenbay</label>
-                    <input type="checkbox" name="Greenbay" id="Greenbay" value="Greenbay">
+                    <input type="checkbox" name="ClosestSchool" id="Greenbay" value="Greenbay">
                     <label for="Howard A Yeager">Howard A Yeager</label>
-                    <input type="checkbox" name="escuelasCercanas" id="Howard A Yeager" value="Howard A Yeager">
+                    <input type="checkbox" name="ClosestSchool" id="Howard A Yeager" value="Howard A Yeager">
                 </div>
                 <div class="closestSchoolContainerColumn">
                     <label for="Marjorie P Hart">Marjorie P Hart</label>
-                    <input type="checkbox" name="escuelasCercanas" id="Marjorie P Hart" value="Marjorie P Hart">
+                    <input type="checkbox" name="ClosestSchool" id="Marjorie P Hart" value="Marjorie P Hart">
                     <label for="North Elementary">North Elementary</label>
-                    <input type="checkbox" name="escuelasCercanas" id="North Elementary" value="North Elementary">
+                    <input type="checkbox" name="ClosestSchool" id="North Elementary" value="North Elementary">
                     <label for="South Elementary">South Elementary</label>
-                    <input type="checkbox" name="escuelasCercanas" id="South Elementary" value="South Elementary">
+                    <input type="checkbox" name="ClosestSchool" id="South Elementary" value="South Elementary">
                 </div>
             </div>
         </fieldset>
@@ -82,15 +95,15 @@
             <div class="positionPlayContainer">
                 <div class="positionPlayContainerColumn">
                     <label for="forward">Forward</label>
-                    <input type="checkbox" name="forward" id="forward" value="forward">
+                    <input type="checkbox" name="Position" id="forward" value="Forward">
                     <label for="defense">Defense</label>
-                    <input type="checkbox" name="defense" id="defense" value="defense">
+                    <input type="checkbox" name="Position" id="defense" value="Defense">
                 </div>
                 <div class="positionPlayContainerColumn">
                     <label for="midfield">Midfield</label>
-                    <input type="checkbox" name="midfield" id="midfield" value="midfield">
+                    <input type="checkbox" name="Position" id="midfield" value="Midfield">
                     <label for="goalkeeper">GoalKeeper</label>
-                    <input type="checkbox" name="goalkeeper" id="goalkeeper" value="goalkeeper">
+                    <input type="checkbox" name="Position" id="goalkeeper" value="GoalKeeper">
                 </div>
             </div>
         </fieldset>
@@ -99,21 +112,21 @@
             <div class="uniformContainer">
                 <div class="uniformContainerColumnLeft">
                     <label for="youthS">Youth Small</label>
-                    <input type="checkbox" name="youthS" id="youthS" value="youthS">
+                    <input type="checkbox" name="UniformSize" id="youthS" value="Youth Small">
                     <label for="youthM">Youth Medium</label>
-                    <input type="checkbox" name="youthM" id="youthM" value="youthM">
+                    <input type="checkbox" name="UniformSize" id="youthM" value="Youth Medium">
                     <label for="youthL">Youth Large</label>
-                    <input type="checkbox" name="youthL" id="youthL" value="youthL">
+                    <input type="checkbox" name="UniformSize" id="youthL" value="Youth Large">
                     <label for="small">Small</label>
-                    <input type="checkbox" name="small" id="small" value="small">
+                    <input type="checkbox" name="UniformSize" id="small" value="Small">
                 </div>
                 <div class="uniformContainerColumnRight">
                     <label for="medium">Medium</label>
-                    <input type="checkbox" name="medium" id="medium" value="medium">
+                    <input type="checkbox" name="UniformSize" id="medium" value="Medium">
                     <label for="large">Large</label>
-                    <input type="checkbox" name="large" id="large" value="large">
+                    <input type="checkbox" name="UniformSize" id="large" value="Large">
                     <label for="extraLarge">Extra-Large</label>
-                    <input type="checkbox" name="extraLarge" id="extraLarge" value="extraLarge">
+                    <input type="checkbox" name="UniformSize" id="extraLarge" value="Extra-Large">
                 </div>
             </div>
         </fieldset>
@@ -125,8 +138,8 @@
                 programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees
                 and associated personnel and volunteers, including the facilities used for practices and games, against
                 any claim by or on behalf of the registrant as a result of the registrant's participation in the
-                programand/orbeing transported to or from MDHL sponsored activities, which transportation By signing
-                below, I agree and authorize the above. In addition, by signing below, I also acknowledge that I have
+                programand/orbeing transported to or from MDHL sponsored activities, which transportation By entering your name below,
+                I agree and authorize the above. In addition, By entering your name below, I also acknowledge that I have
                 read the cancellation policy and agree to its terms.</p>
             <div>
                 <label for="parentOrGuardian">Parent/GuardianSignature:</label>
@@ -136,6 +149,7 @@
                 <label for="date">Date:</label>
                 <input type="text" name="date" id="date">
         </fieldset>
+        <input type="submit" name="" id="">
     </form>
 </body>
 

@@ -432,3 +432,29 @@ legend{
 fieldset{
     border-color: rgb(246 222 46);;
 }
+#street{
+    width: 75vw;
+}
+#streetLabel{
+    width: 10vw;
+}
+.streetContainer{
+    margin-top: 5px;
+    width: 95vw;
+}
+#lastName{
+    margin-left: 30px;
+}
+
+.formNames{
+    display: flex;
+}
+.grade{
+   
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.grade input{
+    margin-left: 10px;
+}

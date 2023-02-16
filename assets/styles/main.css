@@ -394,7 +394,7 @@ input{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: rgb(211, 211, 211);
 }
 .positionPlayContainerColumn{
     display: flex;
@@ -409,7 +409,7 @@ input{
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: rgb(211, 211, 211);
 }
 .uniformContainerColumnLeft{
     display: flex;
@@ -431,7 +431,7 @@ legend{
     font-weight: bold;
 }
 fieldset{
-    border-color: rgb(246 222 46);;
+    border-color: rgb(246 222 46);
 }
 #street{
     width: 75vw;
@@ -456,13 +456,24 @@ fieldset{
    width: 35vw;
 }
 
-
 .grade{
-   
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
 }
 .grade input{
     margin-left: 10px;
+}
+
+select{
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+iframe{
+    width: 25vw;
+    height: 25vh;
+}
+.ClosestSchool{
+    font-weight: bold;
+    color: rgb(246 222 46);
 }

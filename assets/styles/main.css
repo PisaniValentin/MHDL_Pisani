@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+*{   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+}
+
+.nav{
+    display: inline-block;
+}
+
+.bannerContainer{
+    width: 100%;
+    height: 40vh;
+}
+
+.banner{
+    height: 100%;
+    width: 100%;
+}
+
+/************ Animaciones de los botones de navegacion ************/
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+.botonera{
+    width: 249px;
+    height: 69px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 30px;
+    right: 70px;
+    transform: translate(0, 0);
+    background-color: transparent;
+}
+
+.buttonNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 83px;
+    height: 35px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    border: 3px solid rgb(248 225 46);
+    color: rgb(0, 0, 0);
+    font: 12px 'Montserrat', Futura, sans-serif;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    background: #f8e12ead;
+    transition: all .35s;
+}
+
+.buttonNav:before,
+.buttonNav:after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  background: rgb(245 219 46);
+  z-index: -1;
+  transition: all .35s;
+}
+
+.buttonNav:before{
+  opacity: .5;
+}
+
+.buttonNav:after{
+  transition-delay: .2s;
+}
+
+.buttonNav:hover{
+  color: #161616;
+}
+
+.buttonNav:hover:before,
+.buttonNav:hover:after{
+  top: 0;
+}
+
+/************ Actual page nav button Start ************/
+
+.buttonNav[href="#"]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:underline;
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+    
+}
+.buttonNav[href="#"]:hover{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
+.buttonNav[href="#"]::before{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
+.buttonNav[href="#"]::after{
+    background-color: rgb(246 222 46);
+    color: black;
+    border: 3px solid rgb(248 225 46 / 0%);
+}
+
+
+/************ Actual page nav button End ************/
+
+
+.botones{
+
+    font: 14px 'Montserrat', Futura, sans-serif;
+    border: 1px solid rgb(191, 68, 47);;
+}
+
+h1{
+    color:rgb(95 161 153);
+    margin-left: 15px;
+    font: 30px 'Montserrat', Futura, sans-serif;
+}
+
+/************ Home Page Start ************/
+.indexSection{
+    display: flex;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+h2{
+    color:rgb(95 161 153);
+    font: 20px 'Montserrat', Futura, sans-serif;
+    font-weight: bold;
+    height: 5vh;
+    width: 100vw;
+    text-align: center;
+    border: 1px solid rgb(95 161 153);
+}
+
+.logoContainer{
+    width: 20vw;
+}
+
+.logo{
+    width: 100%;
+}
+
+.fechasContainer{
+    color: rgb(211, 211, 211);
+    font: 14px 'Montserrat', Futura, sans-serif;
+    width: 20vw;
+}
+
+.imagenContainer{
+    width: 20vw;
+}
+.imagenIndex{
+    width: 100%;
+}
+/************ Home Page End  ************/
+
+
+/************ Contact Page Start ************/
+.contactSection{
+    display: flex;
+    height: 50vh;
+    font: 14px 'Montserrat', Futura, sans-serif;
+    color: rgb(211, 211, 211);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.contactInfo{
+    margin-top: 85px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contactImage{
+    width: 25vw;
+    margin-left: 30px;
+    margin-top: 30px;
+    vertical-align: top;
+}
+
+.email{
+    color: rgb(246 222 46);
+}
+
+/************ Contact Page End ************/
+
+/************ About Page Start ************/
+
+.aboutSection{
+    display: flex;
+    font: 14px 'Montserrat', Futura, sans-serif;
+    color: rgb(211, 211, 211);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.aboutInfo{
+    width: 43vw;
+    margin-top: 10px;
+}
+
+.aboutImage{
+    width: 20vw;
+}
+.aboutText{
+    width: 43vw;
+}
+.aboutText p{
+    font-size: 12px;
+}
+    
+
+/************ About Page End ************/
+
+/************ Game info page Star ************/
+.tabla,th,td{
+    border-collapse: collapse;
+    border:2px solid rgb(211, 211, 211);
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+.gameInfoSubtitle{
+    display: flex;
+    color:rgb(95 161 153);
+    min-width: auto;
+    max-width: 80%;
+    margin-left: 15px;
+    font: 20px 'Montserrat', Futura, sans-serif;
+    height: 5vh;
+    border: none;
+    font-style: oblique;
+    
+}
+.gameInfoThirTitle{
+    font: 20px 'Montserrat', Futura, sans-serif;
+    font-style: oblique;
+    color:rgb(95 161 153);
+    text-decoration:underline;
+    margin-left: 15px;
+    text-align: start;
+}
+
+footer{
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-right: 15px;
+    font: 15px 'Montserrat', Futura, sans-serif;
+    color: rgb(211, 211, 211);
+}
+
+.gameInfoMain{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.gameInfoArticles{
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+footer b{
+    color:rgb(246 222 46);
+}
+.gameInfoContact{
+    display: flex;
+    justify-content: space-between;
+}
+th{
+    color: rgb(246 222 46);
+}
+
+
+/************ Game info page End ************/
+
+.rulesHeader{
+    margin-top: 0px;
+    text-align: center;
+    color: rgb(211, 211, 211);
+    font: 20px 'Montserrat', Futura, sans-serif;
+}
+
+h1,h2{
+    font-weight: bold;
+}
+
+.rulesH2{
+   margin-left: 0px;
+}
+
+.rulesSection{
+    margin-top: 30px;
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+    margin-left: 30px;
+}
+.rulesSection h2 {
+    width: 100%;
+    text-align: start;
+}
+.rulesSection p {
+    text-align: start;
+}
+
+.lista{
+    margin-left: 15px;
+}
+.listaLetra{
+    list-style-type: lower-alpha;
+}
+ul{
+    list-style-type: circle;
+}
+footer h2{
+    text-align: start;
+    font-weight: bold;
+}
+
+.gameInfoFooterText{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}   
+
+.rulesSubH2{
+    margin-top:0;
+    max-width: 95vw;
+    border: none;
+}
+/** FORMULARIO **/
+form{
+    margin-left:15px ;
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+input{
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+.formFirstPart{
+    flex-direction: column;
+    display: flex;
+    color: white;
+}
+.closestSchoolContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+.closestSchoolContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 153px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.closestSchoolContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 153px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.positionPlayContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(211, 211, 211);
+}
+.positionPlayContainerColumn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 113px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.uniformContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(211, 211, 211);
+}
+.uniformContainerColumnLeft{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 127px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.uniformContainerColumnRight{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+legend{
+    margin-left: 25px ;
+    color: rgb(246 222 46);
+    font-weight: bold;
+}
+fieldset{
+    border-color: rgb(246 222 46);
+}
+#streetID{
+    width: 75vw;
+}
+#Street{
+    width: 10vw;
+}
+.streetContainer{
+    margin-top: 5px;
+    width: 90vw;
+}
+
+#lastName{
+    margin-left: 30px;
+}
+
+.formNames{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formNames input{
+   width: 35vw;
+}
+
+.grade{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.grade input{
+    margin-left: 10px;
+}
+
+select{
+    color: rgb(211, 211, 211);
+    font: 15px 'Montserrat', Futura, sans-serif;
+}
+iframe{
+    width: 25vw;
+    height: 25vh;
+}
+.ClosestSchool{
+    font-weight: bold;
+    color: rgb(246 222 46);
+}
+
+.submitButton{
+    border: 2px solid rgb(248 225 46);
+}

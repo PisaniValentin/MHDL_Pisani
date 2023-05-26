@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League</title>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="icon" href="./assets/images/hockeyIcon.png">
+</head>
+
+<body>
+    <header>
+        <div class="bannerContainer">
+            <img class="banner" src="./assets/images/design2_image1.jpg" alt="Mighty_ducks_banner">
+        </div>
+        <nav class="botonera">
+            <a class="buttonNav" href="./index.html">Home</a>
+            <a class="buttonNav" href="./about.html">About MDHL</a>
+            <a class="buttonNav" href="./contact.html">Contact</a>
+            <a class="buttonNav" href="./game_info.html">GameInfo</a>
+            <a class="buttonNav" href="./rules.html">Rules</a>
+            <a class="buttonNav" href="#">Registration</a>
+        </nav>
+    </header>
+    <h1>Registration Form</h1>
+    <form action="show_data.html" method="get">
+        <div class="formFirstPart">
+            <div class="formNames">
+                <div class="">
+                    <label for="Name">Player's First Name:</label>
+                    <input type="text" name="Name" id="Name">
+                </div>
+                <div>
+                    <label id="lastName" for="LastName">Last Name</label>
+                    <input type="text" name="Lastname" id="LastName">
+                </div>
+            </div>
+            <div class="streetContainer">
+                <label id="streetLabel" for="Street">Street Address:</label>
+                <input type="text" name="Street" id="Street">
+            </div>
+            <div>
+                <label for="City">City:</label>
+                <input type="text" name="City" id="City">
+                <label for="ZipCode">Zip Code:</label>
+                <input type="text" name="ZipCode" id="ZipCode">
+            </div>
+            <div>
+                <label for="Birthday">Birth Date(mm/dd/yyyy):</label>
+                <input type="text" name="Birthday" id="Birthday">
+                <p>Gender:
+
+                    <label for="Female">Female:</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Male">Male:</label>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                </p>
+            </div>
+            <div class="grade">
+                <label for="fifth">5st</label>
+                <input type="checkbox" name="grade" id="fifth" value="5st">
+                <label for="fourth">4st</label>
+                <input type="checkbox" name="grade" id="fourth" value="4st">
+                <label for="third">3st</label>
+                <input type="checkbox" name="grade" id="third" value="3st">
+                <label for="second">2st</label>
+                <input type="checkbox" name="grade" id="second" value="2st">
+                <label for="first">1st</label>
+                <input type="checkbox" name="grade" id="first" value="1st">
+                <label for="preSchool">Pre School</label>
+                <input type="checkbox" name="grade" id="preSchool" value="Pre School">
+                <p>Grade:</p>
+            </div>
+        </div>
+        <fieldset>
+            <legend>Which elementary school do you live near?</legend>
+            <div>
+                <label class="ClosestSchool" for="ClosestSchool">Closest School:</label>
+                <select name="ClosestSchool" id="ClosestSchool">
+                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Greenbay">Greenbay</option>
+                    <option value="Howard A Yeager">Howard A Yeager</option>
+                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                    <option value="North Elementary">North Elementary</option>
+                    <option value="South Elementary">South Elementary</option>
+                </select>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1532166.6400163858!2d-88.1738361!3d41.4063821!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sAJ%20Katzenmaier%20Academy!5e0!3m2!1sen!2sar!4v1676588945926!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d91064.52877092795!2d-88.1951522!3d44.4994506!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fa54437d3b65%3A0xf63728c8a91e81ef!2sGreen%20Bay%20Gamblers%20Hockey!5e0!3m2!1sen!2sar!4v1676589414198!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11801.080246623287!2d-87.8538811!3d42.3154383!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac26b07c5%3A0x8b51fa5d6efe771a!2sHoward%20A.%20Yeager%20School%20(PREK-K)!5e0!3m2!1ses-419!2sar!4v1676589435463!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.2898383819593!2d-87.6459727!3d41.9296229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2637f9d7%3A0xdbff5d5dfcfcfa35!2sMarjorie%20P%20Hart%20Elementary!5e0!3m2!1sen!2sar!4v1676589455688!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d189620.38634699644!2d-87.9264981!3d42.0470714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc6e58cafb32b%3A0xb352c3a8231a21dc!2sNorth%20Shore%20Ice%20Arena!5e0!3m2!1sen!2sar!4v1676589872306!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d190428.2888466331!2d-87.7804084!3d41.7756868!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e24c3caa4dc99%3A0xc2d4aebd2c577cff!2sMorgan%20Park%20Sports%20Center!5e0!3m2!1sen!2sar!4v1676589890760!5m2!1sen!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </fieldset>
+        <fieldset>
+            <legend>What position(s) do you normally play? (check all that apply)</legend>
+            <div class="positionPlayContainer">
+                <div class="positionPlayContainerColumn">
+                    <label for="forward">Forward</label>
+                    <input type="checkbox" name="Position" id="forward" value="Forward">
+                    <label for="defense">Defense</label>
+                    <input type="checkbox" name="Position" id="defense" value="Defense">
+                </div>
+                <div class="positionPlayContainerColumn">
+                    <label for="midfield">Midfield</label>
+                    <input type="checkbox" name="Position" id="midfield" value="Midfield">
+                    <label for="goalkeeper">GoalKeeper</label>
+                    <input type="checkbox" name="Position" id="goalkeeper" value="GoalKeeper">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Uniform Size:</legend>
+            <div class="uniformContainer">
+                <div class="uniformContainerColumnLeft">
+                    <label for="youthS">Youth Small</label>
+                    <input type="radio" name="UniformSize" id="youthS" value="Youth Small">
+                    <label for="youthM">Youth Medium</label>
+                    <input type="radio" name="UniformSize" id="youthM" value="Youth Medium">
+                    <label for="youthL">Youth Large</label>
+                    <input type="radio" name="UniformSize" id="youthL" value="Youth Large">
+                    <label for="small">Small</label>
+                    <input type="radio" name="UniformSize" id="small" value="Small">
+                </div>
+                <div class="uniformContainerColumnRight">
+                    <label for="medium">Medium</label>
+                    <input type="radio" name="UniformSize" id="medium" value="Medium">
+                    <label for="large">Large</label>
+                    <input type="radio" name="UniformSize" id="large" value="Large">
+                    <label for="extraLarge">Extra-Large</label>
+                    <input type="radio" name="UniformSize" id="extraLarge" value="Extra-Large">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Permission to Play</legend>
+            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the
+                rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                associated with hockey and in consideration for the "League" accepting the registrant for its hockey
+                programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees
+                and associated personnel and volunteers, including the facilities used for practices and games, against
+                any claim by or on behalf of the registrant as a result of the registrant's participation in the
+                programand/orbeing transported to or from MDHL sponsored activities, which transportation By entering
+                your name below,
+                I agree and authorize the above. In addition, By entering your name below, I also acknowledge that I
+                have
+                read the cancellation policy and agree to its terms.</p>
+            <div>
+                <label for="Parent/Guardian">Parent/GuardianSignature:</label>
+                <input type="text" name="ParentGuardian" id="Parent/Guardian">
+            </div>
+            <div>
+                <label for="Date">Date:</label>
+                <input type="text" name="Date" id="Date">
+                <input class="submitButton" type="submit">
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
